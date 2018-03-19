@@ -15,87 +15,46 @@ $r = mysqli_query($conn,$sql);
 
 		</head>
 	<body>
-		<div id="bl"></div>
-		<div id="gr"></div>
-		<script type="text/javascript">
-			
-		</script>
-		<!-- <div class="ravnContainer">
-			<div class="ravnLeft"></div>
-			<div class="ravnCenter">
-				<div class="ravnTop"></div>
-				<div class="ravnBottom">
-					<?php while ($result = mysqli_fetch_assoc($r)) {?>
-					<img class="icon" src="<?php echo $result['icon']; ?>">		
-				
-				<?php }?>
-				</div>
-			</div>
-			<div class="ravnRight">
-				
-			</div>
-		</div> -->
 
-	<!-- /body>
-</html> -->
-
-
-<style>
-#mydiv {
-    position: absolute;
-    cursor: move;    
-	top: 0; left: 34%;
-}
-#mydiv1{
-    position: absolute;
-    cursor: move; 
-	top: 0; left: 44%;
-}
-
-#mydiv2{
-    position: absolute;
-    cursor: move; 
-	top: 0; left: 54%;
-}
-
-#divLeft ,#divRight{
-    display: inline-block;  
-
-}
-#divCenter{
-	vertical-align: top;
-	width: 425px;
-	display: inline-block;
-}
-.shlor{
-	margin: auto;
-	width: 1300px;
-}
-
-</style>
 <body>
-	<div class="shlor">
-		<div id="divLeft"  style="width:30%;height:701px; "></div>
-		<div id="divCenter">
-			<div id="mydiv" style= "height:100px;width:100px;background: #2196F3;" ></div>
-			<div id="mydiv1" style="height:100px;width:100px;background: red;" ></div>
-			<div id="mydiv2" style="height:100px;width:100px;background: orange;" ></div>
+	<div class="ravnContainer">
+		<div id="ravnLeft" key='0'  style="width:30%;height:90vh; "></div>
+		<div id="ravnCenter">
+			<div class="hero1top"></div>
+			<div class="hero2bottom"></div>
+			<div class="heroicon">
+				<?php while ($result = mysqli_fetch_assoc($r)) {?>
+				<div id="mydiv<?php echo $result['id']; ?>" class="heroDivClass" 
+					style="height:11%;width:5.7%; background:red;" key="<?php echo $result['id'] ?>" >
+					<img class="icon" src="<?php echo $result['icon']; ?>">		
+				</div>
+				
+				<?php }?> -->
+			</div>
 		</div>
-		<div id="divRight" style="width:30%;height:701px; "></div>
+		<div id="ravnRight" style="width:30%;height:90vh; "></div>
 	</div>
 		
 	<script>
-		var m = document.getElementById("mydiv");
-		var m1 = document.getElementById("mydiv1");
-		var m2 = document.getElementById("mydiv2");
-		var divLeft = document.getElementById("divLeft");
-		var divRight = document.getElementById("divRight");
-		var shloe = document.getElementsByClassName("shlor");
-		dragElement(m,divRight,divLeft,0,34,shloe);
-		dragElement(m1,divRight,divLeft,0,44,shloe);
-		dragElement(m2,divRight,divLeft,0,54,shloe);
+		var hero1 = document.getElementById("mydiv1");
+		var hero2 = document.getElementById("mydiv2");
+		var hero3 = document.getElementById("mydiv3");
+		var hero4 = document.getElementById("mydiv4");
+		var hero5 = document.getElementById("mydiv5");
+		var hero6 = document.getElementById("mydiv6");
+		var hero7 = document.getElementById("mydiv7");
+		var divLeft = document.getElementById("ravnLeft");
+		var divRight = document.getElementById("ravnRight");
+		var ravnContainer = document.getElementsByClassName("ravnContainer");
+		dragElement(hero1,divRight,divLeft,80,34,ravnContainer);
+		dragElement(hero2,divRight,divLeft,80,40,ravnContainer);
+		dragElement(hero3,divRight,divLeft,80,46,ravnContainer);
+		dragElement(hero4,divRight,divLeft,80,52,ravnContainer);
+		dragElement(hero5,divRight,divLeft,68,37,ravnContainer);
+		dragElement(hero6,divRight,divLeft,68,43,ravnContainer);
+		dragElement(hero7,divRight,divLeft,68,49,ravnContainer);
 
  	</script>
 
-</body>
+	</body>
 </html>

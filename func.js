@@ -51,7 +51,7 @@
 	// dragElement(m2,divRight,divLeft,200,0);
 	// dragElement(m3,divRight,divLeft,300,0);
 
-	function dragElement(hero,divRight,divLeft,posTop,posLeft,zaza) {
+	function dragElement(hero,divRight,divLeft,posTop,posLeft,bigWidth) {
 		var div1Left,div1Right,div1Top,div1Bottom,div2Left,div2Right
 		,div2Top,divBottom,poqrLeft,poqrRight,poqrTop,poqrBottom;
 
@@ -77,27 +77,25 @@
 			poqrWidth = parseInt(hero.style.width.split("px")[0]);
 			poqrHeight = parseInt(hero.style.height.split("px")[0]);
 
-			div1Width = zaza[0].clientWidth/3;
-			div1Height = parseInt(divLeft.style.height.split("%")[0]);
-
-			div2Width =zaza[0].clientWidth/3;
-			div2Height = parseInt(divRight.style.height.split("px")[0]);
+			divWidth = bigWidth[0].clientWidth/3.3;
+			divHeight = bigWidth[0].clientHeight;
 
 			div1Left= divLeft.offsetLeft - pos1;
-			div1Right= divLeft.offsetLeft - pos1+div1Width;
+			div1Right= divLeft.offsetLeft - pos1+divWidth;
 			div1Top=  divLeft.offsetTop - pos2;
-			div1Bottom=  divLeft.offsetTop - pos2+div1Height;
+			div1Bottom=  divLeft.offsetTop - pos2+divHeight;
 
 			div2Left= divRight.offsetLeft - pos1;
-			div2Right= divRight.offsetLeft - pos1+div2Width;
+			div2Right= divRight.offsetLeft - pos1+divWidth;
 			div2Top=  divRight.offsetTop - pos2;
-			div2Bottom=  divRight.offsetTop - pos2+div2Height;
+			div2Bottom=  divRight.offsetTop - pos2+divHeight;
 
 			poqrLeft = hero.offsetLeft - pos1;
 			poqrRight = hero.offsetLeft - pos1 +poqrWidth;
 			poqrTop = hero.offsetTop - pos2 ;
 			poqrBottom = hero.offsetTop - pos2+poqrHeight;
 
+			// console.log(div1Height)
 
 		}
 
@@ -105,7 +103,8 @@
 			document.onmouseup = null;
 			document.onmousemove = null;
 			if(poqrBottom>div1Top && poqrTop<div1Bottom && poqrRight>div1Left && poqrLeft<div1Right ){
-				divLeft.style.background=hero.style.background;
+				divLeft.key=hero.key;
+				console.log(divLeft)
 			}
 			else if(poqrBottom>div2Top && poqrTop<div2Bottom && poqrRight>div2Left && poqrLeft<div2Right){
 				divRight.style.background=hero.style.background;
