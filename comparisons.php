@@ -17,22 +17,23 @@ $r = mysqli_query($conn,$sql);
 	<body>
 
 <body>
+		<a href="index.php"><h1 class="home">Home</h1></a><br>
 	<div class="ravnContainer">
-		<div id="ravnLeft" key='0'  style="width:30%;height:90vh; "></div>
+		<div id="ravnLeft" style="width:33%;height:90vh;"></div>
 		<div id="ravnCenter">
-			<div class="hero1top"></div>
-			<div class="hero2bottom"></div>
+			<div id="hero1top"></div>
+			<div id="hero2bottom"></div>
 			<div class="heroicon">
 				<?php while ($result = mysqli_fetch_assoc($r)) {?>
 				<div id="mydiv<?php echo $result['id']; ?>" class="heroDivClass" 
-					style="height:11%;width:5.7%; background:red;" key="<?php echo $result['id'] ?>" >
-					<img class="icon" src="<?php echo $result['icon']; ?>">		
+					style="height:11%;width:5.7%;
+					  background: url(<?php echo $result['icon']?>);background-size: cover;	">
 				</div>
 				
-				<?php }?> -->
+				<?php }?> 
 			</div>
 		</div>
-		<div id="ravnRight" style="width:30%;height:90vh; "></div>
+		<div id="ravnRight" style="width:33%;height:90vh; "></div>
 	</div>
 		
 	<script>
@@ -45,14 +46,16 @@ $r = mysqli_query($conn,$sql);
 		var hero7 = document.getElementById("mydiv7");
 		var divLeft = document.getElementById("ravnLeft");
 		var divRight = document.getElementById("ravnRight");
+		var hero1top = document.getElementById("hero1top");
+		var hero2bottom = document.getElementById("hero2bottom");
 		var ravnContainer = document.getElementsByClassName("ravnContainer");
-		dragElement(hero1,divRight,divLeft,80,34,ravnContainer);
-		dragElement(hero2,divRight,divLeft,80,40,ravnContainer);
-		dragElement(hero3,divRight,divLeft,80,46,ravnContainer);
-		dragElement(hero4,divRight,divLeft,80,52,ravnContainer);
-		dragElement(hero5,divRight,divLeft,68,37,ravnContainer);
-		dragElement(hero6,divRight,divLeft,68,43,ravnContainer);
-		dragElement(hero7,divRight,divLeft,68,49,ravnContainer);
+		dragElement(hero1,divRight,divLeft,80,34,ravnContainer,hero1top,hero2bottom);
+		dragElement(hero2,divRight,divLeft,80,40,ravnContainer,hero1top,hero2bottom);
+		dragElement(hero3,divRight,divLeft,80,46,ravnContainer,hero1top,hero2bottom);
+		dragElement(hero4,divRight,divLeft,80,52,ravnContainer,hero1top,hero2bottom);
+		dragElement(hero5,divRight,divLeft,68,37,ravnContainer,hero1top,hero2bottom);
+		dragElement(hero6,divRight,divLeft,68,43,ravnContainer,hero1top,hero2bottom);
+		dragElement(hero7,divRight,divLeft,68,49,ravnContainer,hero1top,hero2bottom);
 
  	</script>
 

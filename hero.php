@@ -48,28 +48,3 @@ $result = mysqli_fetch_assoc($r);
 		</div>
 	<body>
 </html>
-
-<!--[ id] => 6
-    [name] => Ultron
-    [desc] => Arguably the great
-    [realName] => Ultron
-    [height] => 69" (variable)
-    [weight] => 735 lbs. (variable)
-    [powers] => Ultrons abilities vary with each redesign, but typically include superhuman strength and durability, the power 
-    [abilities] => Phalanx; formerly
-    [group] => Avengers #54 (1968) 
-    [first] => Avengers #54 (1968)more
-    [origin] => No Origin
-    [header_image] => images/header_imageUltron.jpg
-    [icon] => images/iconUltron.jpg
-    [image1] => images/image1Ultron.jpg
-    [image2] => images/image2Ultron.jpg
-    [image3] => images/image3Ultron.jpg
-    [image4] => images/image4Ultron.jpg
-    [image5] => images/image5Ultron.jpg
-    [image6] => images/image6Ultron.jpg
-    [image7] => images/image7Ultron.jpg
-    [image8] => images/image8Ultron.jpg
-    [image9] => images/image9Ultron.jpg
-    [background] => images/backgroundUltron.jpg
-    [page1] => images -->

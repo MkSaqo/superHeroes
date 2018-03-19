@@ -90,59 +90,40 @@ body{
 }
 
 /*____________________________________________________________________________________________________________*/
-
-
-.icon{
-	text-align: center;
-	width: 100%;
-	height:100%;
-}
-
-.icon:hover{
+.heroDivClass:hover{
 	border: 4px solid darkgreen;
 }
 
-
-
-
 .heroDivClass{
     position: absolute;
-    cursor: move;	
+    cursor: move;
+    
 }
-#mydiv1 {
-   	top: 80%; left: 34%;
-}
-#mydiv2{
-	top: 80%; left: 40%;
-}
+#mydiv1{top: 80%; left: 34%;}
+#mydiv2{top: 80%; left: 40%;}
+#mydiv3{top: 80%; left: 46%;}
+#mydiv4{top: 80%; left: 52%;}
+#mydiv5{top: 68%; left: 37%;}
+#mydiv6{top: 68%; left: 43%;}
+#mydiv7{top: 68%; left: 49%;}
 
-#mydiv3{
-	top: 80%; left: 46%;
-}
-
-#mydiv4{
-	top: 80%; left: 52%;
-}
-#mydiv5{
-	top: 68%; left: 37%;
-}
-#mydiv6{
-	top: 68%; left: 43%;
-}
-#mydiv7{
-	top: 68%; left: 49%;
-}
-
-#ravnLeft ,#ravnRight{
-    display: inline-block;  
-
+#ravnLeft,#ravnRight {
+	background-color: rgba(255, 255, 255, 0.06);
+    display: inline-block; 
 }
 #ravnCenter{
-	width: 30%;
+	vertical-align: top;
+	width: 33%;
 	display: inline-block;
 }
-#ravnContainer{
-	width: 90%;
+.ravnContainer{
+	width: 99%;
 	height:  90%;
 	margin: auto;
+}
+#hero1top,#hero2bottom{
+	height: 27vh;
+	text-align: center;
+	color: white;
+	overflow: hidden;
 }
