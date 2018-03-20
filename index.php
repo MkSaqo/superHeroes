@@ -5,6 +5,8 @@
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="images/icon.png">
+
 	</head>
 	<body>
 		<div class="home">

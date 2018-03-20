@@ -11,6 +11,7 @@ $result = mysqli_fetch_assoc($r);
 	<head>
 		<title>Super Heroes</title>
 		<meta charset="utf-8">
+		<link rel="icon" href="images/icon.png">
 		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -33,14 +34,13 @@ $result = mysqli_fetch_assoc($r);
 				<h2> <span>	 Origin: </span><?php echo $result['origin']; ?></h2>
 				<h2 class="desPow"><span>Desc: </span></h2><p><?php echo $result['desc']; ?></p>
 				<h2 class="desPow"><span>Powers: </span></h2><p><?php echo $result['powers']; ?></p>
-				<a href="image.php?src=<?php echo $result['image1'] ?>"><img src="<?php echo $result['image1'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image2'] ?>"><img src="<?php echo $result['image2'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image3'] ?>"><img src="<?php echo $result['image3'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image4'] ?>"><img src="<?php echo $result['image4'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image5'] ?>"><img src="<?php echo $result['image5'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image6'] ?>"><img src="<?php echo $result['image6'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image7'] ?>"><img src="<?php echo $result['image7'] ?>" class="miniImg"></a>
-				<a href="image.php?src=<?php echo $result['image8'] ?>"><img src="<?php echo $result['image8'] ?>" class="miniImg"></a>
+				<?php for ($i = 1;$i<10;$i++){ 
+					$im = "image".$i?>
+				<a href="image.php?src=<?php echo $result[$im] ?>">
+					<img src="<?php echo $result[$im] ?>" class="miniImg">
+				</a>
+				<?php } ?>
+				
 			</div>
 		</div>
 

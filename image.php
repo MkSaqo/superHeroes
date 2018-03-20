@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title></title>
+	<link rel="icon" href="images/icon.png">
+
 	<style type="text/css">
 		body{
 			background-color: black

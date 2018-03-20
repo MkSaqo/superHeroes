@@ -11,38 +11,7 @@ body{
 .bod {
 	background-attachment: fixed;
 }
-.homeImages{
-	width: 100%;
-}
-.mec a{
-	text-decoration: none;
-	color:black;
-}
-.homeNames{
-	color: #111214;
-	text-align: center;
-}
-.mec:hover{
-	text-decoration: underline;
-}
-.mec{
-	display: inline-block;
-	width:  13.6%;
 
-}
-.home{
-	margin: auto;
-}
-#homeTitle{
-	text-align: center;
-	font-size: 50px;
-	margin: 0;
-	font-weight: bold;
-}
-#homeDesc{
-	margin: 0 60px 0 60px;
-	text-align: center;
-}
 /*____________________________________________________________________________________________________________*/
 .heroimg .right{
 	width: 39%;
@@ -80,6 +49,7 @@ body{
 .miniImg{
 	margin: 10px;
 	width: 140px;
+	height:80px;
 }
 .right span{
 	color:chocolate ;
@@ -99,13 +69,13 @@ body{
     cursor: move;
     
 }
-#mydiv1{top: 80%; left: 34%;}
-#mydiv2{top: 80%; left: 40%;}
-#mydiv3{top: 80%; left: 46%;}
-#mydiv4{top: 80%; left: 52%;}
-#mydiv5{top: 68%; left: 37%;}
-#mydiv6{top: 68%; left: 43%;}
-#mydiv7{top: 68%; left: 49%;}
+#mydiv1{top: 82%; left: 38%;}
+#mydiv2{top: 82%; left: 44%;}
+#mydiv3{top: 82%; left: 50%;}
+#mydiv4{top: 82%; left: 56%;}
+#mydiv5{top: 70%; left: 41%;}
+#mydiv6{top: 70%; left: 47%;}
+#mydiv7{top: 70%; left: 53%;}
 
 #ravnLeft,#ravnRight {
 	background-color: rgba(255, 255, 255, 0.06);
@@ -121,9 +91,101 @@ body{
 	height:  90%;
 	margin: auto;
 }
-#hero1top,#hero2bottom{
-	height: 27vh;
+.herotop{
+	height: 30vh;
+	overflow: auto;
 	text-align: center;
 	color: white;
-	overflow: hidden;
+	margin-bottom: 40px;
+	/*border: 1px solid;*/
 }
+.herotop h3{
+	float: left;
+	margin: 0 0 0 20px;
+}
+.herotop p{
+	margin: 0;
+	font-size: 15px;
+}
+h4{
+	margin: 0 20px 0 0;
+	text-align: right;
+}
+.ravnImageLeft{
+	width: 100%;
+	height:  100%;
+}
+
+@media only screen and ( max-width: 1440px) and ( min-width: 768px) {
+	.bod {
+		background-attachment: fixed;
+	}
+	.homeImages{
+		width: 100%;
+	}
+	.mec a{
+		text-decoration: none;
+		color:black;
+	}
+	.homeNames{
+		color: #111214;
+		text-align: center;
+	}
+	.mec:hover{
+		text-decoration: underline;
+	}
+	.mec{
+		display: inline-block;
+		width:  13.6%;
+
+	}
+	.home{
+		margin: auto;
+	}
+	#homeTitle{
+		text-align: center;
+		font-size: 50px;
+		margin: 0;
+		font-weight: bold;
+	}
+	#homeDesc{
+		margin: 0 60px 0 60px;
+		text-align: center;
+	}
+}
+@media only screen and ( max-width: 768px) {
+/*	.homeImages{*/
+/*		width: 100%;*/
+/*	}*/
+/*	.mec a{*/
+/*		text-decoration: none;*/
+/*		color:black;*/
+/*	}*/
+/*	.homeNames{*/
+/*		color: #111214;*/
+/*		text-align: center;*/
+/*	}*/
+/*	.mec:hover{*/
+/*		text-decoration: underline;*/
+/*	}*/
+/*	.mec{*/
+/*		display: inline-block;*/
+/*		width:  13.6%;*/
+/**/
+/*	}*/
+/*	.home{*/
+/*		margin: auto;*/
+/*	}*/
+/*	#homeTitle{*/
+/*		text-align: center;*/
+/*		font-size: 50px;*/
+/*		margin: 0;*/
+/*		font-weight: bold;*/
+/*	}*/
+/*	#homeDesc{*/
+/*		margin: 0 60px 0 60px;*/
+/*		text-align: center;*/
+/*	}*/
+
+}
+/*@media only screen and ( max-width: 480px) {*/
