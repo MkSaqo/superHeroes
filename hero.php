@@ -18,8 +18,8 @@ $result = mysqli_fetch_assoc($r);
 	<body class="bod" style="
 		background-image: url('<?php echo $result["background"] ?>') ;">
 		<div class="hero">
-			<a href="index.php"><h1 class="home">Home</h1></a><br>
-			<a href="comparisons.php"><h1 class="ravn">Comparisons</h1></a>
+			<a href="index.php" class="a2">Home</a><br>
+			<a href="comparisons.php" class="a1">Comparisons</a>
 			<div class="heroimg">
 				<div class="left">
 					<img src="<?php echo($result['page1']) ?>" class="classHero">

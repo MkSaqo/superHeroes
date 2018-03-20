@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="home">
-			<a href="index.php"><h1 class="home">Home</h1></a><br>
+			<a href="index.php"><h1 class="linkHome">Home</h1></a><br>
 			<a href="comparisons.php"><h1 class="ravn">Comparisons</h1></a>
 			<?php 
 			$conn = mysqli_connect("localhost","root","root","superHeroes");

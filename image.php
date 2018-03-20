@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Super Heroes</title>
 	<link rel="icon" href="images/icon.png">
 
 	<style type="text/css">

@@ -18,6 +18,7 @@ function img($val){
 <!DOCTYPE html>
 	<html>
 		<head>
+			<title>Super Heroes</title>
 			<meta charset="utf-8">
 			<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="style.css">
@@ -28,9 +29,10 @@ function img($val){
 	<body>
 
 <body>
-		<a href="index.php"><h1 class="home">Home</h1></a><br>
+	<a href="index.php"><h1 class="linkHome">Home</h1></a><br>
 	<div class="ravnContainer">
-		<div id="ravnLeft" style="width:33%;height:90vh;">
+		<div id="ravnLeft" >
+			
 			<?php 
 			$res = img("id");
 			if($res){?>
@@ -40,36 +42,85 @@ function img($val){
 		<div id="ravnCenter">
 			<div class="herotop">
 				<?php $res = img('id')?>
-				<h3><?php echo($res['name']) ?></h3>
-				<h4><?php echo($res['weight']) ?></h4>
-				<h4><?php echo($res['height']) ?></h4>
-				<p><?php echo($res['group']) ?></p>
-				<p><?php echo($res['origin']) ?></p><br>
-				<p><?php echo($res['powers']) ?></p>			
-			</div>
-			<div class="herotop">
-				<?php $res = img('id1')?>
-				<h3><?php echo($res['name']) ?></h3>
-				<h4><?php echo($res['weight']) ?></h4>
-				<h4><?php echo($res['height']) ?></h4>
-				<p><?php echo($res['group']) ?></p>
-				<p><?php echo($res['origin']) ?></p><br>
-				<p><?php echo($res['powers']) ?></p>
+				<?php $res1 = img('id1')?>
+				<table>
+					<tr>
+						<td><?php echo($res['name']) ?></td>	
+						<td class="tblcenter"><h3>name</h3></td>
+						<td><?php echo($res1['name']) ?></td>
+					</tr>
+					<tr>
+						<td><?php echo($res['weight']) ?></td>	
+						<td class="tblcenter"><h3>weight</h3></td>
+						<td><?php echo($res1['weight']) ?></td>
+					</tr>
+					<tr>
+						<td><?php echo($res['height']) ?></td>	
+						<td class="tblcenter"><h3>height</h3></td>
+						<td><?php echo($res1['height']) ?></td>
+					</tr>
+					<tr>
+						<td><?php echo($res['group']) ?></td>	
+						<td class="tblcenter"><h3>group</h3></td>
+						<td><?php echo($res1['group']) ?></td>
+					</tr>
+					<tr>
+						<td><?php echo($res['origin']) ?></td>	
+						<td class="tblcenter"><h3>origin</h3></td>
+						<td><?php echo($res1['origin']) ?></td>
+					</tr>
+					<tr>
+						<td><?php echo($res['powers']) ?></td>	
+						<td class="tblcenter"><h3>powers</h3></td>
+						<td><?php echo($res1['powers']) ?></td>
+					</tr>
+
+				</table>	
 			</div>
 			<div class="heroicon">
 				<?php
 
 				 while ($result = mysqli_fetch_assoc($r)) {?>
-
 				<div id="mydiv<?php echo $result['id']; ?>" class="heroDivClass" 
-					style="height:11%;width:5.7%;
+					style=";
 					  background: url(<?php echo $result['icon']?>);background-size: cover;	">
 				</div>
 				
 				<?php }?> 
+				 	<script type="text/javascript">
+			 			heroDivClass= document.getElementsByClassName("heroDivClass");
+			 			if(window.innerWidth>350){
+				 			for(var i = 0 ;i<heroDivClass.length; i++){
+				 				heroDivClass[i].style.width="10%"
+				 				heroDivClass[i].style.height="11vh"
+				 			}
+						}			 		
+			 			else{
+			 				for(var i = 0 ;i<heroDivClass.length; i++){
+				 				heroDivClass[i].style.width="10%"
+				 				heroDivClass[i].style.height="5vh"	
+							}
+			 			}
+				 	</script>
 			</div>
 		</div>
-		<div id="ravnRight" style="width:33%;height:90vh; ">
+		<div id="ravnRight">
+			<script type="text/javascript">
+					var ravnLeft = document.getElementById('ravnLeft');
+					var ravnRight = document.getElementById('ravnRight');
+				if(window.innerWidth<700 && window.innerWidth>350){
+					ravnLeft.style="width:50%;height:47vh;";
+					ravnRight.style="width:50%;height:47vh;";
+				}
+				else if(window.innerWidth>700){
+					ravnLeft.style="width:28%;height:76vh;";
+					ravnRight.style="width:28%;height:76vh;";
+				}
+				else{
+					ravnLeft.style="width:47%;height:46vh;";
+					ravnRight.style="width:47%;height:46vh;";
+				}
+			</script>
 			<?php 
 			$res = img("id1") ;
 			if($res){?>
@@ -91,15 +142,25 @@ function img($val){
 		var hero1top = document.getElementById("hero1top");
 		var hero2bottom = document.getElementById("hero2bottom");
 		var ravnContainer = document.getElementsByClassName("ravnContainer");
-		dragElement(hero1,divRight,divLeft,82,34,ravnContainer,hero1top,hero2bottom);
-		dragElement(hero2,divRight,divLeft,82,40,ravnContainer,hero1top,hero2bottom);
-		dragElement(hero3,divRight,divLeft,82,46,ravnContainer,hero1top,hero2bottom);
-		dragElement(hero4,divRight,divLeft,82,52,ravnContainer,hero1top,hero2bottom);
-		dragElement(hero5,divRight,divLeft,70,37,ravnContainer,hero1top,hero2bottom);
-		dragElement(hero6,divRight,divLeft,70,43,ravnContainer,hero1top,hero2bottom);
-		dragElement(hero7,divRight,divLeft,70,49,ravnContainer,hero1top,hero2bottom);
-
+		if(window.innerWidth>350){
+			dragElement(hero1,divRight,divLeft,87,15,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero2,divRight,divLeft,87,26,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero3,divRight,divLeft,87,37,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero4,divRight,divLeft,87,48,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero5,divRight,divLeft,87,59,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero6,divRight,divLeft,87,70,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero7,divRight,divLeft,87,80,ravnContainer,hero1top,hero2bottom);
+			
+		}
+		else{
+			dragElement(hero1,divRight,divLeft,57,15,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero2,divRight,divLeft,57,26,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero3,divRight,divLeft,57,37,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero4,divRight,divLeft,57,48,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero5,divRight,divLeft,57,59,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero6,divRight,divLeft,57,70,ravnContainer,hero1top,hero2bottom);
+			dragElement(hero7,divRight,divLeft,57,80,ravnContainer,hero1top,hero2bottom);
+		}
  	</script>
-
 	</body>
 </html>

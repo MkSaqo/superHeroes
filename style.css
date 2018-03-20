@@ -12,111 +12,514 @@ body{
 	background-attachment: fixed;
 }
 
-/*____________________________________________________________________________________________________________*/
-.heroimg .right{
-	width: 39%;
-	float: right;
-}
-.heroimg .left{
-	width: 60%;
-	float: left;
-	position: fixed;
-}
-.name{
-	text-align: center;
-	color: aquamarine;
 
-}
-.heroimg h2, .heroimg p{
-	color: lightcyan;
-	text-align: justify;
-	padding-right: 10px;
-}
 
-.classHero{
-	width: 100%;
-}
-.home{
-	color: white;
-	position: fixed;
-	z-index: 1;
-}
-.ravn{
-	color: white;
-	position: fixed;
-	z-index: 1;
-}
-.miniImg{
-	margin: 10px;
-	width: 140px;
-	height:80px;
-}
-.right span{
-	color:chocolate ;
-}
-.desPow{
-	float: left;
-	margin: 0;
-}
-
-/*____________________________________________________________________________________________________________*/
 .heroDivClass:hover{
 	border: 4px solid darkgreen;
 }
 
-.heroDivClass{
-    position: absolute;
-    cursor: move;
-    
-}
-#mydiv1{top: 82%; left: 38%;}
-#mydiv2{top: 82%; left: 44%;}
-#mydiv3{top: 82%; left: 50%;}
-#mydiv4{top: 82%; left: 56%;}
-#mydiv5{top: 70%; left: 41%;}
-#mydiv6{top: 70%; left: 47%;}
-#mydiv7{top: 70%; left: 53%;}
+@media screen and (min-width: 701px) and (max-width: 2000px){
+	.linkHome{
+		position: fixed;
+		color: white
+	}
+	.ravn{
+		position: fixed;
+		color: white;
+		margin-top:30px;
+	}
+	.bod {
+		background-attachment: fixed;
+	}
+	.homeImages{
+		width: 100%;
+	}
+	.mec a{
+		text-decoration: none;
+		color:black;
+	}
+	.homeNames{
+		color: #111214;
+		text-align: center;
+	}
+	.mec:hover{
+		transition: 0.5s;
+		background-color: rgba(255,255,255,0.2);
+		padding: 0;
+		border-radius: 15px;
+	}
 
-#ravnLeft,#ravnRight {
-	background-color: rgba(255, 255, 255, 0.06);
-    display: inline-block; 
-}
-#ravnCenter{
-	vertical-align: top;
-	width: 33%;
-	display: inline-block;
-}
-.ravnContainer{
-	width: 99%;
-	height:  90%;
-	margin: auto;
-}
-.herotop{
-	height: 30vh;
-	overflow: auto;
-	text-align: center;
-	color: white;
-	margin-bottom: 40px;
-	/*border: 1px solid;*/
-}
-.herotop h3{
-	float: left;
-	margin: 0 0 0 20px;
-}
-.herotop p{
-	margin: 0;
-	font-size: 15px;
-}
-h4{
-	margin: 0 20px 0 0;
-	text-align: right;
-}
-.ravnImageLeft{
-	width: 100%;
-	height:  100%;
+	.mec{
+		display: inline-block;
+		width:  13.6%;
+
+	}
+	.home{
+		margin: auto;
+	}
+	#homeTitle{
+		text-align: center;
+		color: white;
+		font-size: 50px;
+		margin: 0;
+		font-weight: bold;
+	}
+	#homeDesc{
+		color: white;
+		margin: 0 60px 0 60px;
+		text-align: center;
+	}
+/*===================*/
+	.a1,.a2{
+		font-size: 35px;
+		text-decoration: none;
+		position: fixed;
+		color: white;
+	}
+	.a1{
+		margin-top: 24px;
+	}
+	.heroimg .right{
+		width: 39%;
+		float: right;
+	}
+	.heroimg .left{
+		z-index: -1;
+		width: 72%;
+		position: fixed;
+	}
+	.name{
+		text-align: center;
+		color: aquamarine;
+
+	}
+	.heroimg h2{
+		font-size: 20px;
+	}
+	.heroimg h2, .heroimg p{
+		color: lightcyan;
+		text-align: left;
+		padding-right: 10px;
+	}
+
+	.classHero{
+		width: 100%;
+	}
+
+
+	.miniImg{
+		margin: 10px;
+		width: 24.5%;
+	}
+	.right span{
+		color:chocolate ;
+	}
+	.desPow{
+		float: left;
+		margin: 0;
+	}
+	/*=========================*/
+
+	.heroDivClass{
+	    position: absolute;
+	    cursor: move;  
+
+	}
+	#mydiv1{top: 87%; left:  14%;}
+	#mydiv2{top: 87%; left:  25%;}
+	#mydiv3{top: 87%; left:  36%;}
+	#mydiv4{top: 87%; left:  47%;}
+	#mydiv5{top: 87%; left:  58%;}
+	#mydiv6{top: 87%; left:  69%;}
+	#mydiv7{top: 87%; left:  80%;}
+
+	#ravnLeft,#ravnRight {
+		background-color: rgba(255, 255, 255, 0.06);
+	    display: inline-block; 
+	}
+	#ravnCenter{
+		vertical-align: top;
+		width: 41%;
+		height: 76vh;
+		overflow: auto;
+		display: inline-block;
+	}
+	.ravnContainer{
+		width: 99%;
+		height:  90%;
+		margin: auto;
+	}
+	.herotop{
+		display: inline-block;
+		color: white;
+	}
+	table tr td:first-child,table tr td:last-child{
+		width: 43%;
+		font-size: 15px;
+		text-align: left;
+
+	}
+	.tblcenter{
+		padding-right: 35px;
+	}
+	table td{
+		vertical-align: top;
+		padding:  3px;
+
+	}
+	table h3{
+		text-transform: capitalize;
+		color:darkseagreen;
+		margin: 0;
+	}
+	.ravnImageLeft{
+		width: 100%;
+		height:  100%;
+	}
+
 }
 
-@media only screen and ( max-width: 1440px) and ( min-width: 768px) {
+@media screen and (min-width: 350px)and (max-width: 701px) {
+	.linkHome{
+		font-size: 20px;
+		position: fixed;
+		color: white;
+		z-index:-1;
+	}
+	.ravn{
+		font-size: 20px;
+		z-index: -1;
+		position: fixed;
+		color: white;
+		margin-top:28px;
+	}
+
+	.bod {
+		background-attachment: fixed;
+	}
+	.homeImages{
+		width: 100%;
+	}
+	.mec a{
+		text-decoration: none;
+		color:black;
+	}
+	.homeNames{
+		color: #111214;
+		font-size: 20px;
+		text-align: center;
+	}
+	.mec:hover{
+		transition: 0.5s;
+		background-color: rgba(255,255,255,0.2);
+		padding: 0;
+		border-radius: 15px;
+	}
+    .tblcenter{
+    	display: none;
+    }
+	.mec:nth-of-type(1),.mec:nth-of-type(2),.mec:nth-of-type(3){
+		display: inline-block;
+		width:  32%;
+	}
+	.mec:nth-of-type(4),.mec:nth-of-type(5),.mec:nth-of-type(6),.mec:nth-of-type(7){
+		display: inline-block;
+		width:  24%;
+	}
+	.home{
+		margin: auto;
+	}
+	#homeTitle{
+		text-align: center;
+		color: white;
+		font-size: 33px;
+		margin: 0;
+		font-weight: bold;
+	}
+	#homeDesc{
+		font-size: 14px;
+		color: white;
+		text-align: center;
+	}
+	/*___________________*/
+
+	.a1,.a2{
+		font-size: 25px;
+		text-decoration: none;
+		position: fixed;
+		color: white;
+	}
+	.a1{
+		margin-top: 5px;
+	}
+	.heroimg .right{
+		width: 39%;
+		float: right;
+	}
+	.heroimg .left{
+		z-index: -1;
+		margin-top: 30px;
+		width: 72%;
+		position: fixed;
+	}
+	.name{
+		text-align: center;
+		color: aquamarine;
+
+	}
+	.heroimg h2{
+		font-size: 12px;
+	}
+	.heroimg p{
+		font-size: 10px;
+	}
+	.heroimg h2, .heroimg p{
+		color: lightcyan;
+		text-align: justify;
+		padding-right: 5px;
+	}
+
+	.classHero{
+		width: 100%;
+	}
+
+
+	.miniImg{
+		margin: 3px;
+		width: 24.5%;
+	}
+	.right span{
+		color:chocolate ;
+	}
+	.desPow{
+		float: left;
+		margin: 0;
+	}
+	/*=================================*/
+
+	.heroDivClass{
+	    position: absolute;
+	    cursor: move;  
+	}
+	#mydiv1{top: 87%; left: 15%;}
+	#mydiv2{top: 87%; left: 26%;}
+	#mydiv3{top: 87%; left: 37%;}
+	#mydiv4{top: 87%; left: 48%;}
+	#mydiv5{top: 87%; left: 59%;}
+	#mydiv6{top: 87%; left: 70%;}
+	#mydiv7{top: 87%; left: 80%;}
+
+	#ravnLeft,#ravnRight {
+		background-color: rgba(255, 255, 255, 0.06);
+	    display: inline-block; 
+	}
+	#ravnCenter{
+		vertical-align: top;
+		width: 42%;
+		height: 60vh;
+		overflow: auto;
+		display: inline-block;
+	}
+	.ravnContainer{
+		padding-top: 10%;
+		width: 99%;
+		height:  90%;
+		margin: auto;
+	}
+	.herotop{
+		display: inline-block;
+		color: white;
+	}
+	table tr td:first-child,table tr td:last-child{
+		width: 40%;
+		font-size: 10px;
+		text-align: left;
+
+	}
+	table td{
+		font-size: 11px;
+		vertical-align: top;
+
+	}
+	table h3{
+		text-transform: capitalize;
+		color:darkseagreen;
+		margin: 0;
+	}
+	.ravnImageLeft{
+		width: 100%;
+		height:  100%;
+	}
+
+}
+@media screen and (max-width: 350px) {
+	.linkHome{
+		font-size: 15px;
+		position: fixed;
+		color: white;
+	}
+	.ravn{
+		font-size: 15px;
+		position: fixed;
+		color: white;
+		margin-top:15px;
+	}
+	.bod {
+		background-attachment: fixed;
+	}
+	.homeImages{
+		width: 80%;
+	}
+	.mec a{
+		text-decoration: none;
+		color:black;
+	}
+	.homeNames{
+		color: #111214;
+		font-size: 15px;
+		text-align: center;
+	}
+	.mec:hover{
+		text-decoration: underline;
+	}
+	.mec{
+	
+		display: inline-block;
+		width:  46%;
+	}
+	.home{
+		margin: auto;
+	}
+	#homeTitle{
+		text-align: center;
+		color: white;
+		font-size: 22px;
+		margin: 0;
+		font-weight: bold;
+	}
+	#homeDesc{
+		font-size: 14px;
+		color: white;
+		text-align: center;
+	}
+	/*=============================*/
+	.a1,.a2{
+		font-size: 16px;
+		text-decoration: none;
+		position: fixed;
+		color: white;
+	}
+	.a1{
+		margin-top: 5px;
+	}
+	.heroimg .right{
+		/*width: 39%;*/
+		/*float: right;*/
+	}
+	.heroimg .left{
+		z-index: -1;
+		margin-top: 30px;
+		width: 100%;
+		position: fixed;
+	}
+	.name{
+		text-align: center;
+		color: aquamarine;
+
+	}
+	.heroimg h2{
+		font-size: 12px;
+	}
+	.heroimg p{
+		font-size: 10px;
+	}
+	.heroimg h2, .heroimg p{
+		color: lightcyan;
+		text-align: justify;
+		padding-right: 5px;
+	}
+
+	.classHero{
+		width: 100%;
+	}
+
+
+	.miniImg{
+		margin: 3px;
+		width: 24.5%;
+	}
+	.right span{
+		color:chocolate ;
+	}
+	.desPow{
+		float: left;
+		margin: 0;
+	}
+	/*==============================*/
+
+	.heroDivClass{
+	    position: absolute;
+	    cursor: move;  
+	}
+	#mydiv1{top: 57%; left: 15%;}
+	#mydiv2{top: 57%; left: 26%;}
+	#mydiv3{top: 57%; left: 37%;}
+	#mydiv4{top: 57%; left: 48%;}
+	#mydiv5{top: 57%; left: 59%;}
+	#mydiv6{top: 57%; left: 70%;}
+	#mydiv7{top: 57%; left: 80%;}
+
+	#ravnLeft,#ravnRight {
+		background-color: rgba(255, 255, 255, 0.06);
+	    display: inline-block; 
+	    	    float: left;
+
+	}
+/*	#ravnCenter{
+		vertical-align: top;
+		width: 42%;
+		height: 60vh;
+		overflow: auto;
+		display: inline-block;
+	}*/
+	/*.ravnContainer{
+		padding-top: 10%;
+		width: 99%;
+		height:  90%;
+		margin: auto;
+	}*/
+	.herotop{
+		display:none;
+		/*color: white;*/
+	}
+	/*table tr td:first-child,table tr td:last-child{
+		width: 40%;
+		font-size: 10px;
+		text-align: left;
+
+	}
+	table td{
+		font-size: 11px;
+		vertical-align: top;
+
+	}
+	table h3{
+		text-transform: capitalize;
+		color:darkseagreen;
+		margin: 0;
+	}*/
+	.ravnImageLeft{
+		width: 100%;
+		height:  100%;
+	}
+}
+
+.mec:hover{
+	box-shadow: 0px 0px 30px 10px lightblue;
+	border-radius: 25px;
+}
+/*
+@media only screen and ( max-width: 2000px) {
 	.bod {
 		background-attachment: fixed;
 	}
@@ -153,39 +556,45 @@ h4{
 		text-align: center;
 	}
 }
-@media only screen and ( max-width: 768px) {
-/*	.homeImages{*/
-/*		width: 100%;*/
-/*	}*/
-/*	.mec a{*/
-/*		text-decoration: none;*/
-/*		color:black;*/
-/*	}*/
-/*	.homeNames{*/
-/*		color: #111214;*/
-/*		text-align: center;*/
-/*	}*/
-/*	.mec:hover{*/
-/*		text-decoration: underline;*/
-/*	}*/
-/*	.mec{*/
-/*		display: inline-block;*/
-/*		width:  13.6%;*/
-/**/
-/*	}*/
-/*	.home{*/
-/*		margin: auto;*/
-/*	}*/
-/*	#homeTitle{*/
-/*		text-align: center;*/
-/*		font-size: 50px;*/
-/*		margin: 0;*/
-/*		font-weight: bold;*/
-/*	}*/
-/*	#homeDesc{*/
-/*		margin: 0 60px 0 60px;*/
-/*		text-align: center;*/
-/*	}*/
+
+
+@media only screen and (max-width: 600px) {
+	.home a{
+		position: fixed;
+	}
+	.homeImages{
+		width: 100%;
+	}
+	.mec a{
+		text-decoration: none;
+		color:black;
+	}
+
+
+	.homeNames{
+		color: #111214;
+		text-align: center;
+	}
+	.mec:hover{
+		text-decoration: underline;
+	}
+	.mec{
+		display: inline-block;
+		width:  13.6%;
+	}
+	.home{
+		margin: auto;
+	}
+	#homeTitle{
+		text-align: center;
+		font-size: 50px;
+		margin: 0;
+		font-weight: bold;
+	}
+	#homeDesc{
+		margin: 0 60px 0 60px;
+		text-align: center;
+	}
 
 }
 /*@media only screen and ( max-width: 480px) {*/
