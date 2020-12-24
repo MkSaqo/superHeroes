@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
+
 		<link rel="icon" href="images/icon.png">
 
 	</head>
@@ -13,7 +14,7 @@
 			<a href="index.php"><h1 class="linkHome">Home</h1></a><br>
 			<a href="comparisons.php"><h1 class="ravn">Comparisons</h1></a>
 			<?php 
-			$conn = mysqli_connect("localhost","root","root","superHeroes");
+			$conn = mysqli_connect("localhost","root","Root.1234","superHeroes");
 			$sql = "SELECT * FROM `superHeroes`";
 			$r = mysqli_query($conn,$sql);
 			while($result = mysqli_fetch_assoc($r)){

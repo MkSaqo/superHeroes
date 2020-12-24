@@ -1,6 +1,6 @@
 <?php 
 $id = $_GET["id"];
-$conn = mysqli_connect("localhost","root","root","superHeroes");
+$conn = mysqli_connect("localhost","root","Root.1234","superHeroes");
 $sql = "SELECT * FROM `superHeroes` WHERE `id` = $id ";
 $r = mysqli_query($conn,$sql);
 $result = mysqli_fetch_assoc($r);
